@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import './home.dart';
+import 'package:project2/widgets/bottom%20navigation.dart';
+import 'home.dart';
 
 class Splash extends StatefulWidget {
   const Splash({super.key});
@@ -36,7 +37,7 @@ class _SplashState extends State<Splash> {
     Future.delayed(Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => Home()),
+        MaterialPageRoute(builder: (context) => BottomNav()),
       );
     });
   }
