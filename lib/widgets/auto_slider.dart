@@ -10,7 +10,7 @@ class CarouselDemo extends StatefulWidget {
 
 class _CarouselDemoState extends State<CarouselDemo> {
   int _currentIndex = 0;
-
+//zdhgiyucggxziugc
   final List<String> imgList = [
     'assets/images/sliderimg/fipoff1.png',
     'assets/images/sliderimg/flipoff2.png',
