@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:project2/widgets/auto_slider.dart';
-import 'package:project2/widgets/bottom%20navigation.dart';
 import 'package:project2/widgets/homescreen_widgets.dart';
 
 class Home extends StatefulWidget {
@@ -140,9 +139,7 @@ class _HomeState extends State<Home> {
               color: Color.fromARGB(255, 231, 231, 231),
             ),
 
-            SizedBox(height: 200, child: CarouselDemo()),
-
-            SizedBox(height: 10),
+            SizedBox(height: 220, child: CarouselDemo()),
 
             Padding(
               padding: EdgeInsets.only(left: 20),

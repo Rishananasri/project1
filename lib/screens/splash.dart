@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:project2/widgets/bottom%20navigation.dart';
-import 'home.dart';
 
 class Splash extends StatefulWidget {
   const Splash({super.key});

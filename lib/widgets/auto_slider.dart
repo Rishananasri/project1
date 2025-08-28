@@ -10,14 +10,13 @@ class CarouselDemo extends StatefulWidget {
 
 class _CarouselDemoState extends State<CarouselDemo> {
   int _currentIndex = 0;
-//zdhgiyucggxziugc
   final List<String> imgList = [
     'assets/images/sliderimg/fipoff1.png',
     'assets/images/sliderimg/flipoff2.png',
     'assets/images/sliderimg/flipoff3.png',
     'assets/images/sliderimg/flipoff4.png',
     'assets/images/sliderimg/flipoff5.png',
-    'assets/images/sliderimg/flipoff6.png'
+    'assets/images/sliderimg/flipoff6.png',
   ];
 
   @override
