@@ -40,33 +40,25 @@ Widget customsearch() {
           margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
           height: 50,
           width: 330,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
-            color: Colors.white,
-            border: Border.all(
-              width: 1,
-              color: const Color.fromARGB(221, 158, 158, 158),
-            ),
-          ),
-          child: Row(
-            children: [
-              SizedBox(width: 10),
-              Icon(Icons.search),
-              SizedBox(width: 10),
-              Expanded(
-                child: TextField(
-                  decoration: InputDecoration(
-                    hintText: "Search for products",
-                    border: InputBorder.none,
-                  ),
+          child: TextField(
+            decoration: InputDecoration(
+              contentPadding: EdgeInsets.symmetric(vertical: 12),
+              hintText: "Search for products",
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
+                borderSide: BorderSide(
+                  color: Color.fromARGB(221, 158, 158, 158),
+                  width: 1,
                 ),
               ),
-              Icon(
+              filled: true,
+              fillColor: Colors.white,
+              prefixIcon: Icon(Icons.search, color: Colors.grey),
+              suffixIcon: Icon(
                 Icons.camera_alt,
-                color: const Color.fromARGB(255, 108, 108, 108),
+                color: Color.fromARGB(255, 108, 108, 108),
               ),
-              SizedBox(width: 10),
-            ],
+            ),
           ),
         ),
         SizedBox(width: 5),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class OrderPage extends StatefulWidget {
   const OrderPage({super.key});
@@ -41,26 +40,16 @@ class _OrderPageState extends State<OrderPage> {
                       borderRadius: BorderRadius.circular(5),
                       border: Border.all(width: 1.1, color: Colors.grey),
                     ),
-                    child: Row(
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.only(left: 5),
-                          child: Icon(
-                            Icons.search,
-                            color: Color.fromARGB(255, 108, 108, 108),
+                    child:
+                        TextField(
+                          decoration: InputDecoration(
+                            contentPadding: EdgeInsets.symmetric(vertical: 12),
+                            hintText: "Search your order here",
+                            filled: true,
+                            fillColor: Colors.white,
+                            prefixIcon: Icon(Icons.search, color: Colors.grey),
                           ),
                         ),
-                        SizedBox(width: 10),
-                        Expanded(
-                          child: TextField(
-                            decoration: InputDecoration(
-                              hintText: 'Search your order here',
-                              border: InputBorder.none,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
                   ),
                 ),
                 SizedBox(width: 30),

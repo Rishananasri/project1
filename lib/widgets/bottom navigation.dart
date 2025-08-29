@@ -84,7 +84,7 @@ class _BottomNavState extends State<BottomNav> {
               Icons.shopping_cart,
               color: const Color.fromARGB(255, 20, 89, 199),
             ),
-            label: "Home",
+            label: "Cart",
           ),
         ],
       ),
